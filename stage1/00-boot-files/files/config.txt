@@ -52,5 +52,6 @@
 
 # Additional overlays and parameters are documented /boot/overlays/README
 
-# Enable audio (loads snd_bcm2835)
-dtparam=audio=on
+# Enable audio (sets up Justboom DAC)
+dtparam=audio=off
+dtoverlay=justboom-dac
