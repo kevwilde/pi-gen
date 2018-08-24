@@ -8,8 +8,8 @@ install -v -m 600 files/wpa_supplicant.conf	"${ROOTFS_DIR}/etc/wpa_supplicant/"
 
 echo "
 network={
-    ssid="${NETWORK_NAME}"
-    psk="${NETWORK_PSK}"
+    ssid=\"${NETWORK_NAME}\"
+    psk=\"${NETWORK_PSK}\"
     key_mgmt=WPA-PSK
 }
 
